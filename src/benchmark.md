@@ -89,6 +89,11 @@ terribly enlightening, but it does make me feel better.
 >are kprobes and ftrace the same kernel system? I feel like they are but I am confused.
 
 
+## Third party tool built on perf
+
+```flamegraph``` installable via ```cargo install```. Is a flamegraph generator with additional support for 
+Cargo projects, can be used to profile anything.
+
 <!--  Script to show the footer   -->
 <html>
 <script
