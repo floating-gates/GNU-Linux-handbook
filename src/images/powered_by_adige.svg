@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="244.00357mm"
-   height="90.597153mm"
-   viewBox="0 0 244.00357 90.597153"
+   width="322.29114mm"
+   height="144.56961mm"
+   viewBox="0 0 322.29114 144.56961"
    version="1.1"
    id="svg1"
    xml:space="preserve"
@@ -21,10 +21,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"><inkscape:page
-       x="3.3420959e-14"
+       x="0"
        y="0"
-       width="244.00359"
-       height="90.597153"
+       width="322.29114"
+       height="144.56961"
        id="page2"
        margin="0"
        bleed="0" /></sodipodi:namedview><defs
@@ -47,7 +47,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(37.25746,-103.09443)"><g
+     transform="translate(64.594934,-66.987345)"><g
        id="layer1-7"
        transform="translate(-45.854463,37.805484)"><text
          xml:space="preserve"
@@ -139,4 +139,10 @@
            cx="90.991982"
            cy="233.48376"
            rx="1.1748416"
-           ry="1.1641613" /></g></g></g></svg>
+           ry="1.1641613" /></g><rect
+         style="fill:none;stroke-width:0.478144;stroke-dasharray:none"
+         id="rect1"
+         width="322.29114"
+         height="144.56961"
+         x="-18.740471"
+         y="29.181858" /></g></g></svg>
