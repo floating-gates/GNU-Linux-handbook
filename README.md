@@ -1,16 +1,16 @@
 <div align="center">
   <p align="center">
-    <a href="https://www.adigecalculations.com/">
+    <a href="https://www.floating-gates.com/">
     <img src="src/images/powered_by_adige.png" alt="Adige OF book logo" >
   </p>
   <strong>This book describes the usual practices a medium-advanced GNU/Linux user takes during its workflows. </strong>
 
   <h3>
-    <a href="https://gnulinux-handbook.adigecalculations.com">Read the Book</a>
+    <a href="https://gnu-linux-handbook.floating-gates.com">Read</a>
     <span> | </span>
-    <a href="https://github.com/Adige-Calculations/GNU-Linux-handbook">Contributing</a>
+    <a href="https://github.com/Adige-Calculations/GNU-Linux-handbook">Contribute</a>
     <span> | </span>
-    <a href="https://www.adigecalculations.com/contact">Chat</a>
+    <a href="https://www.floating-gates.com/contact">Chat</a>
   </h3>
 
   <sub>Explore open-source software with us! 🐧⚙⬗ </sub>
