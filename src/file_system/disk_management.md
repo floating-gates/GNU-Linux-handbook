@@ -14,6 +14,12 @@ To check what type of file system you are using use the ```-T``` flag as follows
 df -T
 ```
 
+To get a good description divided in Megabyte and Gygabyte:
+
+```sh
+sudo du -cha --max-depth=2 / | grep -E "M|G"
+```
+
 ## Disk usage (du)
 
 Instead to estimate and summarize file and directory space usage, 

@@ -3,27 +3,18 @@
   <body>
     <footer class="footer-distributed">
       <div class="footer-right">
-        <a class="glow-on-hover" href="https://github.com/Adige-Calculations/GNU-Linux-handbook">Contribute </a>
-        <a class="glow-on-hover" href="https://www.adigecalculations.com/services">Services  </a>
-        <a class="glow-on-hover" href="https://www.adigecalculations.com/about-us">About us</a>
+        <a class="glow-on-hover" href="https://github.com/floating-gates/GNU-Linux-handbook">Contribute </a>
+        <a class="glow-on-hover" href="https://www.floating-gates.com/services">Services</a>
+        <a class="glow-on-hover" href="https://www.floating-gates.com/about-us">About us</a>
       </div>
-    
+      
       <div class="footer-left">
-        <p class="footer-logo">
-          <img
-            class="image"
-            href="https://www.adigecalculations.com/"
-            src="../images/logoWithWords_noBackGround_white.svg"
-            alt="AdigeLogo"
+        <img
+          class="logo_image"
+          href="https://www.adigecalculations.com/"
+          src="../images/logoWithWords_noBackGround_white.svg"
+          alt="Floating Gates"
           />
-          <style>
-            .image {
-              /* position:fixed; */
-              width: 42%;
-              height: auto;
-            }
-          </style>
-        </p>
       </div>
     </footer>
     
@@ -33,141 +24,52 @@
         font-family: Roboto;
       }
       .footer-distributed {
-        margin-top: 70px;
-        background-color: #292c2f;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-        box-sizing: border-box;
-        width: 100%;
-        padding: 43px 50px 25px;
-        max-height: 165px; 
-        border-radius: 8px;
+          display: flex;
+          margin-top: 70px;
+          background-color: #223843;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6%;
+          border-radius: 20px;
       }
-      .footer-left p {
-        color: #7c8085;
-        font-size: 16px;
-        margin: 0;
+
+      .footer-left img.logo_image {
+          height: 45px;
+          width: auto;
       }
-      /* Footer logo */
-      p.footer-logo {
-        font-weight: bold;
-        color: #ffffff;
-        margin: 0 0 10px;
-        padding: 0;
-        transition: ease 0.25s;
-      }
-      .footer-logo a:before {
-        content: "·";
-        font-size: 20px;
-        left: 0;
-        color: #fff;
-        display: inline-block;
-        padding-right: 5px;
-      }
-      .footer-logo .link-1:before {
-        content: none;
-      }
+
       .footer-right {
-        float: right;
-        margin-top: -29px;
+          display: grid;
+          flex-direction: column;
+          gap: 14px;
+          align-items: center;
       }
-      .footer-right a {
-        display: table;
-        width: 100px;
-        height: 18px;
-        padding: 1px;
-        margin: 3px;
-        background-color: #424749;
-        border-radius: 14px;
-        font-size: 15px;
-        color: #ffffff;
-        text-align: center;
-        line-height: 35px;
-        border: 2px;
-        border-color: #303032;
-        border-style: solid;
-        transition: all 0.35s;
-      }
-      .footer-right a:hover {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-      }
-      .footer-distributed p.footer-logo a:hover {
-        text-decoration: underline;
-      }
-
+      
       .glow-on-hover {
-        width: 220px;
-        height: 50px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        position: relative;
-        z-index: 0;
-        border-radius: 10px;
-    }
-
-    .glow-on-hover:before {
-        content: '';
-        background: linear-gradient(45deg, #d9c7c7, #767e80, #919fde, #888987, #5c6b69, #8b90aa, #fafafa, #c9c2c2);
-        position: absolute;
-        top: -2px;
-        left:-2px;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(5px);
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        animation: glowing 20s linear infinite;
-        opacity: 0;
-        transition: opacity .3s ease-in-out;
-        border-radius: 10px;
-    }
-
-    .glow-on-hover:active {
-        color: #000
-    }
-
-    .glow-on-hover:active:after {
-        background: transparent;
-    }
-
-    .glow-on-hover:hover:before {
-        opacity: 1;
-    }
-
-    .glow-on-hover:after {
-        z-index: -1;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgb(65, 66, 68);
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-    }
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-
-      /* Media Queries */
-      @media (max-width: 600px) {
-        .footer-distributed .footer-left,
-        .footer-distributed .footer-right {
+          padding: 10px 20px;
+          background: #D8D3D8;
+          border: 4px solid ##EFF1F3; /* slightly darker than background */
           text-align: center;
-        }
-        .footer-distributed .footer-right {
-          float: none;
-          margin: 0 auto 20px;
-        }
-        .footer-distributed .footer-left p.footer-logo {
-          line-height: 1.8;
-        }
+          border-radius: 10px;
+          transition: 0.8s;
+          font-size: 16px;
+          font-weight: 300;
       }
-    </style>
+
+      .glow-on-hover:hover {
+          box-shadow: 0 0 10px #D8B4A0, 0 0 20px #D8D3D8, 0 0 30px #EFF1F3;
+          background-color: ##D8B4A0;
+      }
+
+      .glow-on-hover,
+      .glow-on-hover:link,
+      .glow-on-hover:visited,
+      .glow-on-hover:active,
+      .glow-on-hover:hover {
+          color: #223843 !important;
+          text-decoration: none !important;
+      }
+
+     </style>
   </body>
 </html>
