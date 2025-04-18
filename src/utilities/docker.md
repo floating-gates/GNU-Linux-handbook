@@ -67,6 +67,7 @@ docker images
 ```
 
 ## Running the container
+
 Running the container means that the docker file will be read and executed, the execution
 can be modified by the flags that follows the utility such as:
 
@@ -93,24 +94,28 @@ docker stop <imageID>
 ```
 
 ### Mount a file system directory inside a docker container
+
 Do not store your simulation data in the container. Instead let’s give our 
-container access to just a little bit of our local filesystem. From your project
-directory in a Windows environment, run:
+container access to the local filesystem. I.g. run:
 
 ```sh
 docker run -ti --rm -v ${PWD}:/data -w /data <imageID>
 ```
+
 By adding the -v option we’re asking Docker to mount our current working directory
 ($PWD) as /data in the container. We’ve also added the -w switch to tell Docker
 that we’d like to be in /data when the container starts.
 
 ## Creating an image from a container 
+
 You can convert a container into an image by using the command
 
 ```sh
 docker commit 
 ```
+
 ## Delete container
+
 The following command will delete the container:
 
 ```sh
@@ -122,7 +127,6 @@ Or you can delete all of them piping two commands:
 ```sh 
 docker rm -vf $(docker ps -aq)
 ```
-
 
 ## Delete images
 To delete the images that does not run a container above them run;
@@ -138,42 +142,13 @@ docker rmi -f $(docker images -aq)
 ```
 
 ## Reclaim space from machine
+
 Docker saves container chaces on ```var/lib/docker```, this can clog the machine disk if 
 there is not enough storage available. A quick solution is to run the following command 
 to clean the system cache:
 
 ```sh
 docker system prune -a -f
-```
-
-# Docker compose 
-
-Docker Compose is a tool for running multi-container applications on Docker defined using
-the Compose file format. A Compose file is used to define how one or more containers that 
-make up your application are configured, such as:
-
-```yml
-version: '3.4'
-
-services:
-  restsvr:
-    image: imageName
-    ports:
-      - 443:8000      # HOST / CONTAINER
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "100m"
-        max-file: "5"
-```
-Once you have a Compose file, you can create and start your application with a single command:
-
-```sh
-docker-compose up --build -d
 ```
 
 <!--  Script to show the footer   -->

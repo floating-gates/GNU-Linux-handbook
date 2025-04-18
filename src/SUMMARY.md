@@ -6,6 +6,7 @@
 - [Directory structure](./directories_struct.md)
 - [Standard streams](./standard_streams.md)
 - [Shell scripting](./shell_scripting.md)
+    - [Scheduling shell](./utilities/scheduling_shell.md) 
 - [File system management](./file_system/file_system.md)
     - [Disk management](./file_system/disk_management.md)
 - [Kernel](./kernel.md)
@@ -41,6 +42,7 @@
     - [General package manager](./utilities/conda.md)
     - [Web server](./utilities/web_server.md)
     - [Contenarization](./utilities/docker.md)
+        - [Docker compose](./utilities/docker_compose.md) 
     <!-- - [Database](./utilities/database.md) -->
 <!-- - [Usage of menu icons](./menu_icons.md) -->
 - [Performance benchmark](./benchmark.md)

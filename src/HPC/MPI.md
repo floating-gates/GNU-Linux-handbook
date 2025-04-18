@@ -27,23 +27,25 @@ MPI applications:
 ```sh
 mpicc test.c -o test
 ```
+
+To see what the mpicc wrapper is doing, execute the following command:
+
+```sh
+mpicc -showme
+```
+
 ### Execution:
 
-Regular applications
+Regular and MPI applications (running with 16 processes):
 
 ```sh
 ./test
-```
-
-MPI applications (running with 16 processes):
-
-```sh
- mpiexec –n 16 ./test
+ mpiexec –n 16 test
 ```
 
 ## System setup
 
-Here it is presented an example on how to set up a Fedora system with MPI compilers wrapper.
+Here it is presented an example on how to set up a RHEL based system with MPI compilers wrapper.
 you’ll need to install the openmpi package, as well as set up the envionrment paths correctly
 (the ```module``` utility becomes handy).
 
@@ -52,7 +54,6 @@ To install a packaged library:
 ```sudo dnf install openmpi openmpi-devel```
 
 Now you can load in the OpenMPI module, prepared as indicated by the [lmod utility](https://gnulinux-handbook.adigecalculations.com/HPC/environment_management.html)
-
 
 ```module load mpi/openmpi-x86_64```
 
