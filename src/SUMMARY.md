@@ -26,7 +26,6 @@
     - [Firewall](./network/firewall.md)
 - [Build software](./build_software.md)
 - [Packages](./package/pkg_management.md)
-- [SSH](./ssh.md)
 - [HPC (High Performance Computing)](./HPC/HPC.md)
     - [Hardware description](./HPC/hardware_description.md)
 	- [Environment](./HPC/environment_management.md)
