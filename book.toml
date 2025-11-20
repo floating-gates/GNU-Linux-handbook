@@ -1,14 +1,13 @@
 [book]
 authors = ["Mattia Samiolo"]
 language = "en"
-multilingual = false
 src = "src"
 title = "GNU-Linux-handbook"
 
 [output.html]
 mathjax-support = true
-git-repository-url = "https://github.com/Adige-Calculations/GNU-Linux-handbook"
-edit-url-template = "https://github.com/Adige-Calculations/GNU-Linux-handbook/tree/main/{path}"
+git-repository-url = "https://github.com/floating-gates/GNU-Linux-handbook"
+edit-url-template = "https://github.com/floating-gates/GNU-Linux-handbook/tree/main/{path}"
 
 [output.html.playground]
 editable = true
